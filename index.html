@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PET听力与阅读练习清单</title>
+    <title>PET语法练习清单</title>
     <style>
         body {
             font-family: 'Microsoft YaHei', sans-serif;
@@ -157,191 +157,353 @@
             margin-bottom: 10px;
             font-style: italic;
         }
+        /* 语法页面特有的样式 */
+        .grammar-point {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 8px 12px;
+            border-radius: 6px;
+            margin: 5px 0;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>📚 PET语法</h1>
+        <h1>📝 PET语法</h1>
         
-        <!-- Listen 部分 -->
-            
-            <!-- PART4 -->
-            <div class="section">
-                <div class="section-title">
-                    词法
-                    <button class="btn btn-reset-section" onclick="resetSection('listen-part4')">重置本部分</button>
-                </div>
-                 
-                <ul class="practice-list" id="listen-part4">
-                     <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test1-p4">
-<label for="test1-p4" class="task-text">
-  <a href="https://raw.githubusercontent.com/Sandy-long/My-picture/main/%E5%90%8D%E8%AF%8D.jpg.jpg" target="_blank">名词 n.</a>
-</label>
-                    </li>
-                   <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test1-p4">
-<label for="test1-p4" class="task-text">
-  <a href="https://sandy-long.github.io/adj/" target="_blank">形容词 adj.</a>
-</label>
-                    </li>
-                    <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-test3-p4">
-                        <label for="listen-test3-p4" class="task-text">TEST3 PART4</label>
-                    </li>
-                    <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-test4-p4">
-                        <label for="listen-test4-p4" class="task-text">TEST4 PART4</label>
-                    </li>
-                    <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-test5-p4">
-                        <label for="listen-test5-p4" class="task-text">TEST5 PART4</label>
-                    </li>
-                    <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-test6-p4">
-                        <label for="listen-test6-p4" class="task-text">TEST6 PART4</label>
-                    </li>
-                    <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-test7-p4">
-                        <label for="listen-test7-p4" class="task-text">TEST7 PART4</label>
-                    </li>
-                    <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-test8-p4">
-                        <label for="listen-test8-p4" class="task-text">TEST8 PART4</label>
-                    </li>
-                    <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-m1-p4">
-                        <label for="listen-m1-p4" class="task-text">M1 part4</label>
-                    </li>
-                    <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-m2-p4">
-                        <label for="listen-m2-p4" class="task-text">M2 part4</label>
-                    </li>
-                    <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-m3-p4">
-                        <label for="listen-m3-p4" class="task-text">M3 part 4</label>
-                    </li>
-                    <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-m4-p4">
-                        <label for="listen-m4-p4" class="task-text">M4 PART4</label>
-                    </li>
-                </ul>
+        <!-- 词法部分 -->
+        <div class="category">
+            <div class="category-title">
+                🔤 词法 (Lexis)
             </div>
- <!-- PART3 -->
+            
+            <!-- 名词 -->
             <div class="section">
-                <div class="section-title">
-                    PART3
-                    <button class="btn btn-reset-section" onclick="resetSection('listen-part3')">重置本部分</button>
+                <div class="section-title">  <a href="https://raw.githubusercontent.com/Sandy-long/My-picture/main/%E5%90%8D%E8%AF%8D.jpg.jpg" target="_blank">
+                    名词 Nouns
+                    <button class="btn btn-reset-section" onclick="resetSection('nouns')">重置本部分</button>
                 </div>
-               
-                <ul class="practice-list" id="listen-part3">
+                <ul class="practice-list" id="nouns">
                     <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-test1-p3">
-                        <label for="listen-test1-p3" class="task-text">TEST1 PART3</label>
+                        <input type="checkbox" class="checkbox" id="noun-singular-plural">
+                        <label for="noun-singular-plural" class="task-text">
+                            可数名词单复数变化规则
+                        </label>
                     </li>
                     <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-test2-p3">
-                        <label for="listen-test2-p3" class="task-text">TEST2 PART3</label>
+                        <input type="checkbox" class="checkbox" id="noun-irregular-plural">
+                        <label for="noun-irregular-plural" class="task-text">
+                            不规则复数名词
+                        </label>
                     </li>
                     <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-test3-p3">
-                        <label for="listen-test3-p3" class="task-text">TEST3 PART3</label>
+                        <input type="checkbox" class="checkbox" id="noun-countable-uncountable">
+                        <label for="noun-countable-uncountable" class="task-text">
+                            可数vs不可数名词用法
+                        </label>
                     </li>
                     <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-test4-p3">
-                        <label for="listen-test4-p3" class="task-text">TEST4 PART3</label>
-                    </li>
-                    <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-test5-p3">
-                        <label for="listen-test5-p3" class="task-text">TEST5 PART3</label>
-                    </li>
-                    <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-test6-p3">
-                        <label for="listen-test6-p3" class="task-text">TEST6 PART3</label>
-                    </li>
-                    <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-test7-p3">
-                        <label for="listen-test7-p3" class="task-text">TEST7 PART3</label>
-						 </li>
-                    <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-test7-p3">
-                        <label for="listen-test8-p3" class="task-text">TEST8 PART3</label>
-                    </li>
-                    <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-m1-p3">
-                        <label for="listen-m1-p3" class="task-text">M1 PART3</label>
-                    </li>
-                    <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-m2-p3">
-                        <label for="listen-m2-p3" class="task-text">M2 PART3</label>
-                    </li>
-                    <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-m3-p3">
-                        <label for="listen-m3-p3" class="task-text">M3 PART3</label>
-                    </li>
-                    <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-m4-p3">
-                        <label for="listen-m4-p3" class="task-text">M4 PART3</label>
-                    </li>
-                    <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-e8-p3">
-                        <label for="listen-e8-p3" class="task-text">E8 PART3</label>
-                    </li>
-                    <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-e9-p3">
-                        <label for="listen-e9-p3" class="task-text">E9 PART3</label>
-                    </li>
-                    <li class="practice-item">
-                        <input type="checkbox" class="checkbox" id="listen-e10-p3">
-                        <label for="listen-e10-p3" class="task-text">E10 PART3</label>
+                        <input type="checkbox" class="checkbox" id="noun-collections">
+                        <label for="noun-collections" class="task-text">
+                            集合名词和集合表达
+                        </label>
                     </li>
                 </ul>
             </div>
 
-        <div class="stats">
-            <div>📊 总体完成进度</div>
-            <div class="progress-bar">
-                <div class="progress-fill" id="progressFill"></div>
+            <!-- 动词 -->
+            <div class="section">
+                <div class="section-title">
+                    动词 Verbs
+                    <button class="btn btn-reset-section" onclick="resetSection('verbs')">重置本部分</button>
+                </div>
+                <ul class="practice-list" id="verbs">
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="verb-present-simple">
+                        <label for="verb-present-simple" class="task-text">
+                            一般现在时
+                        </label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="verb-present-continuous">
+                        <label for="verb-present-continuous" class="task-text">
+                            现在进行时
+                        </label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="verb-past-simple">
+                        <label for="verb-past-simple" class="task-text">
+                            一般过去时
+                        </label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="verb-past-continuous">
+                        <label for="verb-past-continuous" class="task-text">
+                            过去进行时
+                        </label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="verb-future-forms">
+                        <label for="verb-future-forms" class="task-text">
+                            将来时的各种表达
+                        </label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="verb-perfect-tenses">
+                        <label for="verb-perfect-tenses" class="task-text">
+                            完成时 (现在完成时、过去完成时)
+                        </label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="verb-passive-voice">
+                        <label for="verb-passive-voice" class="task-text">
+                            被动语态
+                        </label>
+                    </li>
+                </ul>
             </div>
-            <div id="progressText">0/0 已完成 (0%)</div>
+
+            <!-- 形容词和副词 -->
+            <div class="section">
+                <div class="section-title">
+                      <a href="https://sandy-long.github.io/adj/" target="_blank">形容词 adjectives.</a> &   <a href="https://sandy-long.github.io/adj/" target="_blank">副词 adverbs.</a>
+                    <button class="btn btn-reset-section" onclick="resetSection('adj-adv')">重置本部分</button>
+                </div>
+                <ul class="practice-list" id="adj-adv">
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="adj-comparative">
+                        <label for="adj-comparative" class="task-text">
+                            形容词比较级
+                        </label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="adj-superlative">
+                        <label for="adj-superlative" class="task-text">
+                            形容词最高级
+                        </label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="adv-types">
+                        <label for="adv-types" class="task-text">
+                            副词的类型和位置
+                        </label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="adj-order">
+                        <label for="adj-order" class="task-text">
+                            多个形容词的排列顺序
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 句法部分 -->
+        <div class="category">
+            <div class="category-title">
+                📝 句法 (Syntax)
+            </div>
+            
+            <!-- 基本句型 -->
+            <div class="section">
+                <div class="section-title">
+                    基本句型结构
+                    <button class="btn btn-reset-section" onclick="resetSection('sentence-patterns')">重置本部分</button>
+                </div>
+                <ul class="practice-list" id="sentence-patterns">
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="pattern-svo">
+                        <label for="pattern-svo" class="task-text">
+                            主谓宾结构 (SVO)
+                        </label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="pattern-questions">
+                        <label for="pattern-questions" class="task-text">
+                            疑问句构成 (一般疑问句、特殊疑问句)
+                        </label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="pattern-negation">
+                        <label for="pattern-negation" class="task-text">
+                            否定句的构成
+                        </label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="pattern-imperatives">
+                        <label for="pattern-imperatives" class="task-text">
+                            祈使句
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 从句 -->
+            <div class="section">
+                <div class="section-title">
+                    从句 Clauses
+                    <button class="btn btn-reset-section" onclick="resetSection('clauses')">重置本部分</button>
+                </div>
+                <ul class="practice-list" id="clauses">
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="clause-that">
+                        <label for="clause-that" class="task-text">
+                            that引导的宾语从句
+                        </label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="clause-if-whether">
+                        <label for="clause-if-whether" class="task-text">
+                            if/whether引导的宾语从句
+                        </label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="clause-time">
+                        <label for="clause-time" class="task-text">
+                            时间状语从句 (when, while, as soon as等)
+                        </label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="clause-condition">
+                        <label for="clause-condition" class="task-text">
+                            条件状语从句 (if, unless等)
+                        </label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="clause-relative">
+                        <label for="clause-relative" class="task-text">
+                            定语从句 (who, which, that等关系代词)
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 特殊句型 -->
+            <div class="section">
+                <div class="section-title">
+                    特殊句型 Special Structures
+                    <button class="btn btn-reset-section" onclick="resetSection('special-structures')">重置本部分</button>
+                </div>
+                <ul class="practice-list" id="special-structures">
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="structure-there-be">
+                        <label for="structure-there-be" class="task-text">
+                            There be句型
+                        </label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="structure-too-enough">
+                        <label for="structure-too-enough" class="task-text">
+                            too...to..., enough to...结构
+                        </label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="structure-used-to">
+                        <label for="structure-used-to" class="task-text">
+                            used to do结构
+                        </label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="structure-modal-verbs">
+                        <label for="structure-modal-verbs" class="task-text">
+                            情态动词 (can, could, must, should等)
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 标点符号和拼写 -->
+        <div class="category">
+            <div class="category-title">
+                ✏️ 标点与拼写 Punctuation & Spelling
+            </div>
+            
+            <div class="section">
+                <div class="section-title">
+                    常用标点符号
+                    <button class="btn btn-reset-section" onclick="resetSection('punctuation')">重置本部分</button>
+                </div>
+                <ul class="practice-list" id="punctuation">
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="punctuation-full-stop">
+                        <label for="punctuation-full-stop" class="task-text">
+                            句号的使用
+                        </label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="punctuation-comma">
+                        <label for="punctuation-comma" class="task-text">
+                            逗号的使用规则
+                        </label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="punctuation-apostrophe">
+                        <label for="punctuation-apostrophe" class="task-text">
+                            撇号的所有格用法
+                        </label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="punctuation-question-exclamation">
+                        <label for="punctuation-question-exclamation" class="task-text">
+                            问号和感叹号的使用
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div>📊 语法练习完成进度</div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="grammar-progressFill"></div>
+            </div>
+            <div id="grammar-progressText">0/0 已完成 (0%)</div>
             
             <div class="summary">
                 <div class="summary-item">
-                    <span class="summary-number" id="listen-count">0/43</span>
-                    <span>LISTEN 完成</span>
+                    <span class="summary-number" id="lexis-count">0/15</span>
+                    <span>词法 完成</span>
                 </div>
                 <div class="summary-item">
-                    <span class="summary-number" id="read-count">0/158</span>
-                    <span>READ 完成</span>
+                    <span class="summary-number" id="syntax-count">0/13</span>
+                    <span>句法 完成</span>
                 </div>
                 <div class="summary-item">
-                    <span class="summary-number" id="total-count">0/201</span>
+                    <span class="summary-number" id="punctuation-count">0/4</span>
+                    <span>标点 完成</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-number" id="grammar-total-count">0/32</span>
                     <span>总计完成</span>
                 </div>
             </div>
 
             <div style="margin-top: 20px;">
-                <button class="btn btn-reset" id="reset-btn">🔄 重置所有</button>
+                <button class="btn btn-reset" id="grammar-reset-btn">🔄 重置所有</button>
             </div>
         </div>
     </div>
 
     <script>
-        // 初始化 - 从本地存储加载状态
+        // 语法页面专用的本地存储键前缀
+        const GRAMMAR_STORAGE_PREFIX = 'grammar_';
+        
+        // 初始化 - 从本地存储加载语法练习状态
         document.addEventListener('DOMContentLoaded', function() {
-            // 加载所有复选框状态
+            // 加载所有语法复选框状态
             document.querySelectorAll('.checkbox').forEach(checkbox => {
-                const savedState = localStorage.getItem(checkbox.id);
+                const savedState = localStorage.getItem(GRAMMAR_STORAGE_PREFIX + checkbox.id);
                 if (savedState === 'true') {
                     checkbox.checked = true;
                     checkbox.nextElementSibling.classList.add('completed');
                 }
             });
             
-            updateProgress();
+            updateGrammarProgress();
         });
 
-        // 监听所有复选框的变化
+        // 监听所有语法复选框的变化
         document.querySelectorAll('.checkbox').forEach(checkbox => {
             checkbox.addEventListener('change', function() {
                 // 更新标签状态
@@ -352,69 +514,73 @@
                     label.classList.remove('completed');
                 }
                 
-                // 保存到本地存储
-                localStorage.setItem(this.id, this.checked);
+                // 保存到本地存储（使用专用前缀）
+                localStorage.setItem(GRAMMAR_STORAGE_PREFIX + this.id, this.checked);
                 
                 // 更新进度
-                updateProgress();
+                updateGrammarProgress();
             });
         });
 
-        // 重置特定部分
+        // 重置特定语法部分
         function resetSection(sectionId) {
-            if (confirm('确定要重置本部分的所有任务吗？')) {
+            if (confirm('确定要重置本部分的所有语法练习吗？')) {
                 const section = document.getElementById(sectionId);
                 section.querySelectorAll('.checkbox').forEach(checkbox => {
                     checkbox.checked = false;
                     checkbox.nextElementSibling.classList.remove('completed');
-                    localStorage.removeItem(checkbox.id);
+                    localStorage.removeItem(GRAMMAR_STORAGE_PREFIX + checkbox.id);
                 });
-                updateProgress();
+                updateGrammarProgress();
             }
         }
 
-        // 更新进度
-        function updateProgress() {
+        // 更新语法练习进度
+        function updateGrammarProgress() {
             const allCheckboxes = document.querySelectorAll('.checkbox');
             const totalItems = allCheckboxes.length;
             const completedItems = document.querySelectorAll('.checkbox:checked').length;
             const percentage = totalItems > 0 ? Math.round((completedItems / totalItems) * 100) : 0;
             
             // 更新进度条
-            document.getElementById('progressFill').style.width = percentage + '%';
-            document.getElementById('progressText').textContent = `${completedItems}/${totalItems} 已完成 (${percentage}%)`;
+            document.getElementById('grammar-progressFill').style.width = percentage + '%';
+            document.getElementById('grammar-progressText').textContent = `${completedItems}/${totalItems} 已完成 (${percentage}%)`;
             
             // 更新各部分统计
-            updateCategoryStats();
+            updateGrammarCategoryStats();
         }
 
-        // 更新分类统计
-        function updateCategoryStats() {
-            // LISTEN 统计 (43项)
-            const listenCompleted = document.querySelectorAll('#listen-part4 .checkbox:checked, #listen-part3 .checkbox:checked, #listen-part2 .checkbox:checked, #listen-part1 .checkbox:checked').length;
-            document.getElementById('listen-count').textContent = `${listenCompleted}/43`;
+        // 更新语法分类统计
+        function updateGrammarCategoryStats() {
+            // 词法统计 (15项)
+            const lexisCompleted = document.querySelectorAll('#nouns .checkbox:checked, #verbs .checkbox:checked, #adj-adv .checkbox:checked').length;
+            document.getElementById('lexis-count').textContent = `${lexisCompleted}/15`;
             
-            // READ 统计 (158项)
-            const readCompleted = document.querySelectorAll('#read-part1 .checkbox:checked, #read-part2 .checkbox:checked, #read-part3 .checkbox:checked, #read-part4 .checkbox:checked, #read-part5 .checkbox:checked, #read-part6 .checkbox:checked').length;
-            document.getElementById('read-count').textContent = `${readCompleted}/158`;
+            // 句法统计 (13项)
+            const syntaxCompleted = document.querySelectorAll('#sentence-patterns .checkbox:checked, #clauses .checkbox:checked, #special-structures .checkbox:checked').length;
+            document.getElementById('syntax-count').textContent = `${syntaxCompleted}/13`;
+            
+            // 标点统计 (4项)
+            const punctuationCompleted = document.querySelectorAll('#punctuation .checkbox:checked').length;
+            document.getElementById('punctuation-count').textContent = `${punctuationCompleted}/4`;
             
             // 总计统计
-            const totalCompleted = listenCompleted + readCompleted;
-            document.getElementById('total-count').textContent = `${totalCompleted}/201`;
+            const totalCompleted = lexisCompleted + syntaxCompleted + punctuationCompleted;
+            document.getElementById('grammar-total-count').textContent = `${totalCompleted}/32`;
         }
 
-        // 重置所有任务
-        document.getElementById('reset-btn').addEventListener('click', function() {
-            if (confirm('确定要重置所有任务吗？所有完成状态将被清除！')) {
+        // 重置所有语法练习
+        document.getElementById('grammar-reset-btn').addEventListener('click', function() {
+            if (confirm('确定要重置所有语法练习吗？所有完成状态将被清除！')) {
                 document.querySelectorAll('.checkbox').forEach(checkbox => {
                     checkbox.checked = false;
                     checkbox.nextElementSibling.classList.remove('completed');
-                    localStorage.removeItem(checkbox.id);
+                    localStorage.removeItem(GRAMMAR_STORAGE_PREFIX + checkbox.id);
                 });
-                updateProgress();
+                updateGrammarProgress();
             }
         });
     </script>
 </body>
-
 </html>
+
