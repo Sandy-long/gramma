@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PET听力练习清单</title>
+    <title>PET听力与阅读练习清单</title>
     <style>
         body {
             font-family: 'Microsoft YaHei', sans-serif;
@@ -13,7 +13,7 @@
             min-height: 100vh;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             background: white;
             border-radius: 16px;
@@ -28,6 +28,19 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+        }
+        .category {
+            margin-bottom: 40px;
+        }
+        .category-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
         }
         .section {
             margin-bottom: 30px;
@@ -49,7 +62,7 @@
         .practice-item {
             display: flex;
             align-items: center;
-            padding: 12px 15px;
+            padding: 10px 15px;
             border-bottom: 1px solid #f0f0f0;
             transition: all 0.3s ease;
         }
@@ -57,14 +70,14 @@
             background-color: #f8f9ff;
         }
         .checkbox {
-            width: 20px;
-            height: 20px;
+            width: 18px;
+            height: 18px;
             margin-right: 12px;
             cursor: pointer;
             accent-color: #4CAF50;
         }
         .task-text {
-            font-size: 15px;
+            font-size: 14px;
             color: #333;
             cursor: pointer;
             flex: 1;
@@ -112,213 +125,198 @@
         .btn-reset:hover {
             background: #ff5252;
         }
+        .btn-reset-section {
+            background: #ffa726;
+            font-size: 12px;
+            padding: 6px 12px;
+            margin-left: 10px;
+        }
+        .btn-reset-section:hover {
+            background: #ff9800;
+        }
         .summary {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
             gap: 15px;
             margin-top: 20px;
         }
         .summary-item {
             background: rgba(255,255,255,0.1);
-            padding: 15px;
+            padding: 12px;
             border-radius: 8px;
             text-align: center;
         }
         .summary-number {
-            font-size: 24px;
+            font-size: 20px;
             font-weight: bold;
             display: block;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🎧 PET语法</h1>
+        <h1>📚 PET语法</h1>
         
-        <!-- PART4 部分 -->
-        <div class="section">
-            <div class="section-title">词法 </div>
-            <ul class="practice-list" id="part4-list">
-                <li class="practice-item">
+        <!-- Listen 部分 -->
+            
+            <!-- PART4 -->
+            <div class="section">
+                <div class="section-title">
+                    词法
+                    <button class="btn btn-reset-section" onclick="resetSection('listen-part4')">重置本部分</button>
+                </div>
+                 
+                <ul class="practice-list" id="listen-part4">
+                     <li class="practice-item">
                     <input type="checkbox" class="checkbox" id="test1-p4">
 <label for="test1-p4" class="task-text">
   <a href="https://raw.githubusercontent.com/Sandy-long/My-picture/main/%E5%90%8D%E8%AF%8D.jpg.jpg" target="_blank">名词 n.</a>
 </label>
-                </li>
+                    </li>
                    <li class="practice-item">
                     <input type="checkbox" class="checkbox" id="test1-p4">
 <label for="test1-p4" class="task-text">
   <a href="https://sandy-long.github.io/adj/" target="_blank">形容词 adj.</a>
 </label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test3-p4">
-                    <label for="test3-p4" class="task-text">TEST3 PART4</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test4-p4">
-                    <label for="test4-p4" class="task-text">TEST4 PART4</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test5-p4">
-                    <label for="test5-p4" class="task-text">TEST5 PART4</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test6-p4">
-                    <label for="test6-p4" class="task-text">TEST6 PART4</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test7-p4">
-                    <label for="test7-p4" class="task-text">TEST7 PART4</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test8-p4">
-                    <label for="test8-p4" class="task-text">TEST8 PART4</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="m1-p4">
-                    <label for="m1-p4" class="task-text">M1 part4</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="m2-p4">
-                    <label for="m2-p4" class="task-text">M2 part4</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="m3-p4">
-                    <label for="m3-p4" class="task-text">M3 part 4</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="m4-p4">
-                    <label for="m4-p4" class="task-text">M4 PART4</label>
-                </li>
-            </ul>
-        </div>
-
-        <!-- PART3 部分 -->
-        <div class="section">
-            <div class="section-title">PART3 </div>
-            <ul class="practice-list" id="part3-list">
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test1-p3">
-                    <label for="test1-p3" class="task-text">TEST1 PART3</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test2-p3">
-                    <label for="test2-p3" class="task-text">TEST2 PART3</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test3-p3">
-                    <label for="test3-p3" class="task-text">TEST3 PART3</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test4-p3">
-                    <label for="test4-p3" class="task-text">TEST4 PART3</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test5-p3">
-                    <label for="test5-p3" class="task-text">TEST5 PART3</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test6-p3">
-                    <label for="test6-p3" class="task-text">TEST6 PART3</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test7-p3">
-                    <label for="test7-p3" class="task-text">TEST7 PART3</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test7-p3">
-                    <label for="test8-p3" class="task-text">TEST8 PART3</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="m1-p3">
-                    <label for="m1-p3" class="task-text">M1 PART3</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="m2-p3">
-                    <label for="m2-p3" class="task-text">M2 PART3</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="m3-p3">
-                    <label for="m3-p3" class="task-text">M3 PART3</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="m4-p3">
-                    <label for="m4-p3" class="task-text">M4 PART3</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="e8-p3">
-                    <label for="e8-p3" class="task-text">E8 PART3</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="e9-p3">
-                    <label for="e9-p3" class="task-text">E9 PART3</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="e10-p3">
-                    <label for="e10-p3" class="task-text">E10 PART3</label>
-                </li>
-            </ul>
-        </div>
-
-        <!-- PART2 部分 -->
-        <div class="section">
-            <div class="section-title">PART2 </div>
-            <ul class="practice-list" id="part2-list">
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test1-p2">
-                    <label for="test1-p2" class="task-text">TEST1 PART2</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test2-p2">
-                    <label for="test2-p2" class="task-text">TEST2 PART2</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test3-p2">
-                    <label for="test3-p2" class="task-text">TEST3 PART2</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test4-p2">
-                    <label for="test4-p2" class="task-text">TEST4 PART2</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test5-p2">
-                    <label for="test5-p2" class="task-text">TEST5 PART2</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test6-p2">
-                    <label for="test6-p2" class="task-text">TEST6 PART2</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test7-p2">
-                    <label for="test7-p2" class="task-text">TEST7 PART2</label>
-                </li>
-                <li class="practice-item">
-                    <input type="checkbox" class="checkbox" id="test8-p2">
-                    <label for="test8-p2" class="task-text">TEST8 PART2</label>
-                </li>
-            </ul>
-        </div>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-test3-p4">
+                        <label for="listen-test3-p4" class="task-text">TEST3 PART4</label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-test4-p4">
+                        <label for="listen-test4-p4" class="task-text">TEST4 PART4</label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-test5-p4">
+                        <label for="listen-test5-p4" class="task-text">TEST5 PART4</label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-test6-p4">
+                        <label for="listen-test6-p4" class="task-text">TEST6 PART4</label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-test7-p4">
+                        <label for="listen-test7-p4" class="task-text">TEST7 PART4</label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-test8-p4">
+                        <label for="listen-test8-p4" class="task-text">TEST8 PART4</label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-m1-p4">
+                        <label for="listen-m1-p4" class="task-text">M1 part4</label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-m2-p4">
+                        <label for="listen-m2-p4" class="task-text">M2 part4</label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-m3-p4">
+                        <label for="listen-m3-p4" class="task-text">M3 part 4</label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-m4-p4">
+                        <label for="listen-m4-p4" class="task-text">M4 PART4</label>
+                    </li>
+                </ul>
+            </div>
+ <!-- PART3 -->
+            <div class="section">
+                <div class="section-title">
+                    PART3
+                    <button class="btn btn-reset-section" onclick="resetSection('listen-part3')">重置本部分</button>
+                </div>
+               
+                <ul class="practice-list" id="listen-part3">
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-test1-p3">
+                        <label for="listen-test1-p3" class="task-text">TEST1 PART3</label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-test2-p3">
+                        <label for="listen-test2-p3" class="task-text">TEST2 PART3</label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-test3-p3">
+                        <label for="listen-test3-p3" class="task-text">TEST3 PART3</label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-test4-p3">
+                        <label for="listen-test4-p3" class="task-text">TEST4 PART3</label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-test5-p3">
+                        <label for="listen-test5-p3" class="task-text">TEST5 PART3</label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-test6-p3">
+                        <label for="listen-test6-p3" class="task-text">TEST6 PART3</label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-test7-p3">
+                        <label for="listen-test7-p3" class="task-text">TEST7 PART3</label>
+						 </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-test7-p3">
+                        <label for="listen-test8-p3" class="task-text">TEST8 PART3</label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-m1-p3">
+                        <label for="listen-m1-p3" class="task-text">M1 PART3</label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-m2-p3">
+                        <label for="listen-m2-p3" class="task-text">M2 PART3</label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-m3-p3">
+                        <label for="listen-m3-p3" class="task-text">M3 PART3</label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-m4-p3">
+                        <label for="listen-m4-p3" class="task-text">M4 PART3</label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-e8-p3">
+                        <label for="listen-e8-p3" class="task-text">E8 PART3</label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-e9-p3">
+                        <label for="listen-e9-p3" class="task-text">E9 PART3</label>
+                    </li>
+                    <li class="practice-item">
+                        <input type="checkbox" class="checkbox" id="listen-e10-p3">
+                        <label for="listen-e10-p3" class="task-text">E10 PART3</label>
+                    </li>
+                </ul>
+            </div>
 
         <div class="stats">
             <div>📊 总体完成进度</div>
             <div class="progress-bar">
                 <div class="progress-fill" id="progressFill"></div>
             </div>
-            <div id="progressText">0/34 已完成 (0%)</div>
+            <div id="progressText">0/0 已完成 (0%)</div>
             
             <div class="summary">
                 <div class="summary-item">
-                    <span class="summary-number" id="p4-count">0/12</span>
-                    <span>PART4 完成</span>
+                    <span class="summary-number" id="listen-count">0/43</span>
+                    <span>LISTEN 完成</span>
                 </div>
                 <div class="summary-item">
-                    <span class="summary-number" id="p3-count">0/14</span>
-                    <span>PART3 完成</span>
+                    <span class="summary-number" id="read-count">0/158</span>
+                    <span>READ 完成</span>
                 </div>
                 <div class="summary-item">
-                    <span class="summary-number" id="p2-count">0/8</span>
-                    <span>PART2 完成</span>
+                    <span class="summary-number" id="total-count">0/201</span>
+                    <span>总计完成</span>
                 </div>
             </div>
 
@@ -362,34 +360,47 @@
             });
         });
 
+        // 重置特定部分
+        function resetSection(sectionId) {
+            if (confirm('确定要重置本部分的所有任务吗？')) {
+                const section = document.getElementById(sectionId);
+                section.querySelectorAll('.checkbox').forEach(checkbox => {
+                    checkbox.checked = false;
+                    checkbox.nextElementSibling.classList.remove('completed');
+                    localStorage.removeItem(checkbox.id);
+                });
+                updateProgress();
+            }
+        }
+
         // 更新进度
         function updateProgress() {
             const allCheckboxes = document.querySelectorAll('.checkbox');
             const totalItems = allCheckboxes.length;
             const completedItems = document.querySelectorAll('.checkbox:checked').length;
-            const percentage = Math.round((completedItems / totalItems) * 100);
+            const percentage = totalItems > 0 ? Math.round((completedItems / totalItems) * 100) : 0;
             
             // 更新进度条
             document.getElementById('progressFill').style.width = percentage + '%';
             document.getElementById('progressText').textContent = `${completedItems}/${totalItems} 已完成 (${percentage}%)`;
             
             // 更新各部分统计
-            updateSectionStats();
+            updateCategoryStats();
         }
 
-        // 更新各部分统计
-        function updateSectionStats() {
-            // PART4 统计 (12项)
-            const p4Completed = document.querySelectorAll('#part4-list .checkbox:checked').length;
-            document.getElementById('p4-count').textContent = `${p4Completed}/12`;
+        // 更新分类统计
+        function updateCategoryStats() {
+            // LISTEN 统计 (43项)
+            const listenCompleted = document.querySelectorAll('#listen-part4 .checkbox:checked, #listen-part3 .checkbox:checked, #listen-part2 .checkbox:checked, #listen-part1 .checkbox:checked').length;
+            document.getElementById('listen-count').textContent = `${listenCompleted}/43`;
             
-            // PART3 统计 (15项)
-            const p3Completed = document.querySelectorAll('#part3-list .checkbox:checked').length;
-            document.getElementById('p3-count').textContent = `${p3Completed}/15`;
+            // READ 统计 (158项)
+            const readCompleted = document.querySelectorAll('#read-part1 .checkbox:checked, #read-part2 .checkbox:checked, #read-part3 .checkbox:checked, #read-part4 .checkbox:checked, #read-part5 .checkbox:checked, #read-part6 .checkbox:checked').length;
+            document.getElementById('read-count').textContent = `${readCompleted}/158`;
             
-            // PART2 统计 (8项)
-            const p2Completed = document.querySelectorAll('#part2-list .checkbox:checked').length;
-            document.getElementById('p2-count').textContent = `${p2Completed}/8`;
+            // 总计统计
+            const totalCompleted = listenCompleted + readCompleted;
+            document.getElementById('total-count').textContent = `${totalCompleted}/201`;
         }
 
         // 重置所有任务
@@ -405,6 +416,5 @@
         });
     </script>
 </body>
+
 </html>
-
-
